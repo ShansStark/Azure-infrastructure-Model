@@ -1,4 +1,5 @@
-#Azure subscription
+#Azure subscription 
+# Code created on the local laptop
 subscription_id = "YOUR-AZURE-SUBSCRIPTION-ID-HERE" # Need to update it
 
 # Resource Group Configuration

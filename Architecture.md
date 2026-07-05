@@ -1,6 +1,6 @@
 ### Deep Secure Public/Remote Architecture
 
-Image/SRD-Architecture.png
+![Architecture](image.png)
 
 * The codebase and Infrastructure as Code (IaC) are developed and maintained on the local machine.
 * The application code and IaC templates for client deployments are pushed to a GitHub repository.

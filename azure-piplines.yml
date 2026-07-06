@@ -1,0 +1,23 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- checkout: self
+
+- script: |
+    git config --global user.email "pipeline@dev.azure.com"
+    git config --global user.name "Azure Pipeline"
+
+    # Clone GitHub repository
+    git clone https://github.com/ShansStark/Azure-infrastructure-Model.git repo
+    cd repo
+
+    # Add Azure Repos as remote
+    git remote add azure https://$(AZURE_PAT)@dev.azure.com/v-shund/Stark-Azure-Enterprise/_git/Stark-Azure-Enterprise
+
+    # Push all changes
+    git push azure main --force
+  displayName: 'Sync GitHub to Azure Repos'

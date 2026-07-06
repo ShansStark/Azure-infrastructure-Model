@@ -9,8 +9,8 @@ steps:
   persistCredentials: true
 
 - script: |
-    git config --global user.email "v-shund@microsoft.com"
-    git config --global user.name "shunmuga"
+    git config --global user.email "shunmugalv3@gmail.com"
+    git config --global user.name "ShansStark"
 
     echo "Current GitHub source files:"
     ls -la

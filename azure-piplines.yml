@@ -19,5 +19,5 @@ steps:
     git remote add azure https://$(AZURE_PAT)@dev.azure.com/v-shund/Stark-Azure-Enterprise/_git/Stark-Azure-Enterprise
 
     echo "Pushing GitHub latest code to Azure Repos"
-    git push azure main --force
+    git push azure Head:main --force
   displayName: 'Sync GitHub to Azure Repos'
